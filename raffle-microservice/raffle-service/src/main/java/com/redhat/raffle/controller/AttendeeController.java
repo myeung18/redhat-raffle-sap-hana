@@ -33,6 +33,9 @@ public class AttendeeController {
 	public List<Attendee> getRandomizedAttendees() {
 		List<Attendee> attendees = raffleRepository.findAll();
 		Collections.shuffle(attendees);
+
+
+		System.out.println("------------");
 		return attendees;
 	}
 
